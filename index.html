@@ -1,1 +1,1210 @@
-a
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Multiagent Sequential Decision Making under Uncertainty</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="Multiagent Sequential Decision Making under Uncertainty MSDM 2023"
+    content="Multiagent Sequential Decision Making under Uncertainty MSDM 2023" />
+
+  <!--
+    //////////////////////////////////////////////////////
+
+    FREE TEMPLATE
+    DESIGNED & DEVELOPED by free-template.co
+
+    Website:    https://free-template.co
+    Facebook:   https://www.facebook.com/FreeDashTemplate.co
+    Twitter:    https://twitter.com/Free_Templateco
+
+    //////////////////////////////////////////////////////
+    -->
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    table {
+      border-collapse: separate;
+      border-spacing: 20px 0;
+    }
+
+    td {
+      padding: 5px;
+    }
+  </style>
+
+  <style>
+    .collapsible {
+      background-color: white;
+      color: maroon;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+    }
+
+    .collapsible:hover {
+      background-color: rgb(240, 240, 240);
+    }
+
+    .collapsible:after {
+      content: '\002B';
+      color: black;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+      margin-right: 15px;
+    }
+
+    .left-col {
+      width: 15%;
+    }
+
+    .collapsible.active::after {
+      content: "\2212";
+    }
+
+    .hidden-content {
+      padding: 0 5px;
+      overflow: hidden;
+      background-color: white;
+      max-height: 0;
+      line-height: 115%;
+      transition: max-height 0.2s ease-out;
+    }
+  </style>
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
+
+
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <header class="site-navbar py-3 js-site-navbar site-navbar-target" role="banner" id="site-navbar">
+
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-11 col-xl-2 site-logo">
+          <p class="mb-0">
+            <a href="index.html" class="text-white mb-0"></a>
+          </p>
+        </div>
+        <div class="col-12 col-md-10 d-none d-xl-block">
+          <nav class="site-navigation position-relative text-right" role="navigation">
+
+            <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+              <li><a href="#section-home" class="nav-link">Home</a></li>
+              <li class="has-children">
+ 			  <li><a href="#LocationOrganization" class="nav-link">Location & Organization</a></li>
+			  <li><a href="#section-ImportantDates" class="nav-link">Important Dates</a></li>
+			  <li><a href="#section-WorkshopOverview" class="nav-link">Overview</a></li>
+			  <li><a href="#section-Topics" class="nav-link">Topics</a></li>
+			  <li><a href="#section-SubmissionProcedure" class="nav-link">Submission Procedure</a></li>
+              <!--<li><a href="#section-videos" class="nav-link">Videos</a></li>-->
+              <!--<li><a href="#section-speakers" class="nav-link">Speakers</a></li>-->
+              <!--<li><a href="#section-program" class="nav-link">Program</a></li>-->
+              <!--<li><a href="#section-papers" class="nav-link">Contributed Papers</a></li>-->
+              <li><a href="#section-OrganizingCommittee" class="nav-link">Organizing Committee</a></li>
+
+            </ul>
+          </nav>
+        </div>
+
+
+        <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
+            class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
+
+      </div>
+
+    </div>
+    </div>
+
+  </header>
+
+
+
+  <div class="site-blocks-cover overlay" style="background-image: url(images/msdm23background.png);" data-aos="fade"
+    data-stellar-background-ratio="0.5" id="section-home">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+
+        <div class="col-md-8" data-aos="fade-up" data-aos-delay="300">
+
+
+          <h1 class="text-white font-weight-light text-uppercase font-weight-bold" data-aos="fade-up">Multiagent Sequential Decision Making under Uncertainty </h1>
+          <br>
+          <h2 class="mb-5" data-aos="fade-up" data-aos-delay="100" style="color:white">CALL FOR PAPERS</h2>
+          <h2 class="mb-5" data-aos="fade-up" data-aos-delay="100" style="color:white">AAMAS 2023 Workshop</h2>
+          <h4 class="mb-5" data-aos="fade-up" data-aos-delay="100" style="color:white">11th Workshop in the MSDM series</h4>
+          <h4 class="mb-5" data-aos="fade-up" data-aos-delay="100" style="color:white">[This workshop will be held virtually through Zoom]</h4>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section" id="LocationOrganization">
+    <div class="container">
+      <div class="row mb-0 mt-5">
+
+        <div class="text-justify pb-1 border-primary mb-4">
+          <h2 class="text-primary">Location & Organization</h2>
+        </div>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <p>
+			<font size="+1">The MSDM-23 workshop will take place jointly with <a href="https://aamas2023.soton.ac.uk" target="_blank">AAMAS 2023</a> on 29 May – 2 June 2023 in the London ExCeL conference centre, London, United Kingdom.</font>
+         </p>
+      </div>
+    </div>
+  </div>
+	
+	
+<div class="site-section" id="section-ImportantDates">
+    <div class="container">
+      <div class="row mb-0">
+        <div class="text-justify pb-1 border-primary mb-4">
+          <h2 class="text-primary">Important Dates</h2>
+        </div>
+		  </div>
+		  
+      <div class="row mt-0">
+        <font size="4" face="Helvetica">
+          <table width="100%">
+            <tbody>	
+				
+              <tr>
+                <td class="left-col" style="color:navy">January&nbsp30,&nbsp2023&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td> <br>
+                <td style="color:navy">Welcome Remarks</td>
+              </tr>
+				<tr>
+                <td class="left-col" style="color:navy">March&nbsp13,&nbsp2023&nbsp&nbsp</td> <br>
+                <td style="color:navy">Paper acceptance notification</td>
+              </tr>
+				<tr>
+                <td class="left-col" style="color:navy">May&nbsp29-30,&nbsp2023&nbsp&nbsp</td> <br>
+                <td style="color:navy">AAMAS 2023 workshops</td>
+              </tr>
+
+				
+			</tbody>
+          </table>
+        </font>
+
+      </div>
+      </div>
+    </div>
+	
+	
+	
+<!--
+  <div class="site-section" id="section-announcement">
+    <div class="container">
+      <div class="row mb-0 mt-5">
+
+        <div class="text-justify pb-1 border-primary mb-4">
+          <h2 class="text-primary">Announcements</h2>
+        </div>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <p>
+          <font size="+1">All authors and participants **must** register through the IROS-22 <a
+              href="https://iros2022.org/registrationvisa/registration/#virtual-online-registration-fees9"
+              target="_blank">registration website</a> .
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </p>
+        <h5> Venue Info:</h5>
+        <ul>
+          <li>Zoom link for the workshop: &nbsp&nbsp &nbsp&nbsp <a href="https://gatech.zoom.us/j/96212204755"
+              target="_blank">gatech.zoom.us/j/96212204755</a></li>
+          <li>IROS Conference Room: <font style="color:navy">&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp Room 15
+              (ThWF-15)</font>
+          </li>
+        </ul>
+
+        <h5> Workshop-only registration fees:</h5>
+        <ul>
+          <li>10,000 JPY (~80 USD) for IEEE members</li>
+          <li>1,000 JPY (~8 USD) for IEEE student members</li>
+        </ul>
+        <h5> Publication Opportunities:</h5>
+        <p style="margin-left:2%">
+          Selected papers from the workshop will be considered for publication as part of a Research Topic in the
+          section of
+          <a href="https://www.frontiersin.org/journals/robotics-and-ai/sections/multi-robot-systems"
+            target="_blank">Multi-Robot Systems</a>
+          in the
+          <a href="https://www.frontiersin.org/journals/robotics-and-ai" target="_blank">Frontiers of Robotics and
+            AI</a>.
+          The papers will undergo a regular review
+          process prior to publication. More information regarding the submission process to this Research Topic will be
+          provided to the participants after the workshop.
+        </p>
+      </div>
+    </div>
+  </div>
+-->
+	
+	
+	
+  <div class="site-section" id="section-WorkshopOverview">
+    <div class="container">
+
+      <div class="row mb-0 mt-5">
+
+        <div class="text-justify pb-1 border-primary mb-4">
+          <h2 class="text-primary">Workshop Overview</h2>
+        </div>
+        <p>
+          <font size="+1">Multiagent sequential decision making under uncertainty (MSDM) is the problem multiple agents face when they aim to optimise their decisions over a finite or infinite number of time steps in a stochastic environment. It becomes increasingly complex when there is limited communication among the agents and the agents would act subjectively in a real-time interaction. The research problem is one of the core challenging issues in the agents planning community where researchers have developed a significant amount of research in the past decades. For example, a number of multiagent decision models, e.g. Dec-POMDP, MMDP and I-POMDP, have been well developed while a variety of different algorithms have been crafted to solve the models with the consideration of tractable computational complexity. However, the research challenges still exist particularly in an open AI world where unknown unknowns further complicate the agents’ interactions in both offline agent model and online plan execution.
+
+          </font>
+        </p>
+        <p>
+          <font size="+1">The purpose of this workshop is to revisit the previous research achievements and discuss potential solutions to the new challenges in the MSDM research. Meanwhile, it is noticed that data-driven AI with powerful deep learning have dramatically changed the AI research horizon, which also offers great opportunities to re-shape the MSDM research. Hence, this workshop aims to bring together researchers in the fields of agents planning, reasoning and learning, as well as general machine learning and data science. We expect to discuss new MSDM solutions and foster research collaboration so as to demonstrate the MSDM research in a set of impactful real-world applications, e.g. health, space, security and so on.
+          </font>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="site-section" id="section-Topics">
+    <div class="container">
+
+      <div class="row mb-0 mt-5">
+
+        <div class="text-justify pb-1 border-primary mb-4">
+          <h2 class="text-primary">Topics</h2>
+        </div>
+		   <p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		  </p>
+        <p>
+          <font size="+1"> This workshop will cover the following main topics:</font>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </p>
+
+        <p>
+          <font size="+1"> - Agent planning, reasoning and learning</font>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </p>
+		<p>
+          <font size="+1">- Modelling other agents and self-modelling			</font>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </p>
+		  		<p>
+          <font size="+1">- New multiagent decision and planning models			</font>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </p>
+		  		<p>
+          <font size="+1">- Data-driven agent systems			</font>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </p>
+		  		<p>
+          <font size="+1">- Interdisciplinary agent research</font>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </p>
+		  		<p>
+          <font size="+1">- Markov games</font>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </p>
+		  		<p>
+          <font size="+1">- MSDM applications</font>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </p>
+		  		<p>
+          <font size="+1">- MSDM Benchmarks and evaluation methodologies</font>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </p>
+		  		<p>
+          <font size="+1">- Future MSDM research and new challenges</font>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </p>
+		  		<p>
+          <font size="+1">In addition, this workshop will organise a theme-focused panel dedicated to the discussion -New MSDM Challenges and Opportunities – and provide operational research advice to academics and potential practitioners in various application domains.</font>
+
+        </p>
+      </div>
+    </div>
+  </div>
+	
+	
+ <!--
+<div class="site-section border-bottom" id="section-videos">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center border-primary">
+          <h2 class="font-weight-light text-primary" data-aos="fade">Video Recordings</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="person">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XezAX7OUjA0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>[Invited Session 1] Nora Ayanian - Multi-Agent Path Finding in Robotics</h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+          <div class="person">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vs12kjqV7Bg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>[Invited Session 1] Peter Stone - The Value of Communication in Ad Hoc Teamwork</h3>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="person">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d7u2NaoybTU"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>[Invited Session 2] Sven Koenig - Multi-Agent Path Finding and Its Applications</h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+          <div class="person">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4p7Sq--C_Zo"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>[Invited Session 2] Huy Tran - On Utilities for Cooperative Multi-agent RL</h3>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="person">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AdTirNsguCk"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>[Invited Session 3] Chi Jin - V-Learning --- A Simple, Efficient, Decentralized Algorithm for Multiagent
+              RL
+            </h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+          <div class="person">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Mm8BuQb3Mys"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>[Invited Session 3] Bo An - Deep Learning for Solving Large Scale Complex Games</h3>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="person">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/b4FO1A6i4XY"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>[Invited Session 4] Jakob Foerster - Opponent-Shaping and Interference in General-Sum Games</h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+          <div class="person">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vaz5w-uo-EA"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>[Invited Session 4] Amanda Prorok - Machine Learning for Multi-Agent and Multi-Robot Problems</h3>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="person">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hEQ0P4E7w0k"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>Oral Presentations</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+-->
+
+  <!--<div class="site-section border-bottom" id="section-speakers">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center border-primary">
+          <h2 class="font-weight-light text-primary" data-aos="fade">Invited Speakers</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="person">
+            <a href="https://engineering.brown.edu/news/2022-01-07/nora-ayanian-joins-brown-faculty" target="_blank">
+              <img src="images/speakers/NoraAyanian.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
+            </a>
+            <h3>Nora Ayanian</h3>
+            <p class="mb-4"> Brown University </p>
+            <ul class="ul-social-circle">
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+          <div class="person">
+            <a href="https://www.cs.utexas.edu/~pstone/" target="_blank">
+              <img src="images/speakers/PeterStone.png" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
+            </a>
+            <h3>Peter Stone</h3>
+            <p class="mb-4">University of Texas at Austin</p>
+            <ul class="ul-social-circle">
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+          <div class="person">
+            <a href="https://www.proroklab.org/" target="_blank"><img src="images/speakers/AmandaProrok.jpg" alt="Image"
+                class="img-fluid rounded mb-5 w-75 rounded-circle"></a>
+
+            <h3>Amanda Prorok</h3>
+            <p class="mb-4">University of Cambridge</p>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="person">
+            <a href="https://sites.google.com/view/cjin/home" target="_blank"><img src="images/speakers/ChiJin.jpg"
+                alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle"></a>
+
+            <h3>Chi Jin</h3>
+            <p class="mb-4">Princeton University</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="person">
+            <a href="http://idm-lab.org/bio.html" target="_blank"><img src="images/speakers/SvenKoenig.jpg" alt="Image"
+                class="img-fluid rounded mb-5 w-75 rounded-circle"></a>
+
+            <h3>Sven Koenig</h3>
+            <p class="mb-4">University of Southern California</p>
+            <ul class="ul-social-circle">
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+          <div class="person">
+            <a href="https://personal.ntu.edu.sg/boan/" target="_blank"><img src="images/speakers/BoAn.jpg" alt="Image"
+                class="img-fluid rounded mb-5 w-75 rounded-circle"></a>
+
+            <h3>Bo An</h3>
+            <p class="mb-4">Nanyang Technical University</p>
+            <ul class="ul-social-circle">
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+          <div class="person">
+            <a href="https://aerospace.illinois.edu/directory/profile/huytran1/" target="_blank"><img
+                src="images/speakers/HuyTran.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle"></a>
+
+            <h3>Huy T. Tran</h3>
+            <p class="mb-4">U of Illinois Urbana-Champaign</p>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="person">
+            <a href="https://www.jakobfoerster.com/" target="_blank"><img src="images/speakers/JakobFoerster.jpeg"
+                alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle"></a>
+
+            <h3>Jakob Foerster</h3>
+            <p class="mb-4">University of Oxford</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>-->
+
+  <!--<div class="site-section" id="section-program">
+    <div class="container">
+      <div class="row mb-0">
+        <div class="text-justify pb-1 border-primary mb-4">
+          <h2 class="text-primary">Workshop schedule</h2>
+        </div>
+      </div>
+
+      <div class="row mt-0">
+        <font size="4" face="Helvetica">
+          <table width="100%">
+            <tbody>
+              <tr>
+                <td class="left-col" style="color:navy"></td> <br>
+                <td style="color:maroon">All times in JST (UTC + 09)</td>
+              </tr>
+              <tr>
+                <td class="left-col" style="color:navy">January 30, 2023</td> <br>
+                <td style="color:navy">Welcome Remarks</td>
+              </tr>
+              <tr>
+                <td class="left-col" style="color:navy">9:10a</td>
+                <td style="color:navy">Invited Session 1</td>
+              </tr>
+              <tr>
+                <td>9:10-9:40a</td>
+                <td>
+                  <div class="collapsible">Nora Ayanian (Brown) - Why Is This Taking So Long? Multi-Agent Path Finding
+                    in robotics</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="+2">Abstract:</font>
+                      </b>
+                      Multi-agent path finding (MAPF) is an important decision problem for all multi-robot systems, but
+                      with a huge array of solvers, it is difficult to decide which solver to use. In this presentation,
+                      I will discuss our state-of-the-art MAPF algorithm selector that automatically chooses an optimal
+                      MAPF solver to use to solve any instance. I will also discuss our work in trying to understand
+                      what makes some MAPF instances hard to solve, which, in turn, can improve our algorithm selection.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>9:40-10:10a</td>
+                <td>
+                  <div class="collapsible">Peter Stone (UT Austin) - The Value of Communication in Ad Hoc Teamwork</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="+2">Abstract:</font>
+                      </b>
+                      In ad hoc teamwork, multiple agents need to collaborate without having
+                      knowledge about their teammates or their plans a priori. A common
+                      assumption in this research area is that the agents cannot
+                      communicate. However, just as two random people may speak the same
+                      language, autonomous teammates may also happen to share a
+                      communication protocol. We consider how such a shared protocol can be
+                      leveraged, introducing a means to reason about Communication in Ad Hoc
+                      Teamwork (CAT). The goal of this work is enabling improved ad hoc
+                      teamwork by judiciously leveraging the ability of the team to
+                      communicate.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>10:10-10:15a</td>
+                <td>Q/A and Discussion for Invited Session 1</td>
+              </tr>
+              <tr>
+                <td style="color:navy">10:15a</td>
+                <td>
+                  <div class="collapsible" style="color:navy">Contributed Papers - Oral Presentations</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <font style="color:navy">10:15-10:27a</font> --- Data-Efficient Collaborative Decentralized
+                      Thermal-Inertial Odometry <br>
+                      <font style="color:navy">10:27-10:39a</font> --- Modular Value Function Factorization in
+                      Multi-Agent Reinforcement Learning <br>
+                      <font style="color:navy">10:39-10:51a</font> --- Asynchronous Actor-Critic for Multi-Agent
+                      Reinforcement Learning <br>
+                      <font style="color:navy">10:51-11:03a</font> --- Toward Capability-Aware Cooperation for
+                      Decentralized Planning <br>
+                      <font style="color:navy">11:03-11:15a</font> --- A Game-theoretic Utility Network for Multi-Agent
+                      Decisions in Adversarial
+                      Environments
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:navy">11:15a</td>
+                <td style="color:navy">Invited Session 2</td>
+              </tr>
+              <tr>
+                <td>11:15-11:45a</td>
+                <td>
+                  <div class="collapsible">Sven Koenig (USC) - Multi-Agent Path Finding and Its Applications</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="+2">Abstract:</font>
+                      </b>
+                      The coordination of robots and other agents becomes more and more important for industry. For
+                      example, on the order of one thousand robots already navigate autonomously in fulfillment centers
+                      to
+                      move inventory pods all the way from their storage locations to the picking stations that need the
+                      products they store (and vice versa). Optimal and, in some cases, even approximately optimal path
+                      planning for these robots is NP-hard, yet one must find high-quality collision-free paths for them
+                      in real-time. Algorithms for such multi-agent path-finding problems have been studied in robotics
+                      and theoretical computer science for a longer time but are insufficient since they are either fast
+                      but of insufficient solution quality or of good solution quality but too slow. In this talk, I
+                      will
+                      discuss both recent cool ideas for solving such multi-agent path-finding problems (including the
+                      roles of planning and machine learning) and several of their applications, including in
+                      warehousing.
+                      Our research on this topic has been funded by both NSF and Amazon Robotics.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>11:45-12:15p</td>
+                <td>
+                  <div class="collapsible">Huy Tran (UIUC) - On Utilities for Cooperative Multi-agent RL</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="+2">Abstract:</font>
+                      </b>
+                      A challenge in cooperative multi-agent reinforcement learning is credit assignment, where it is
+                      often difficult to determine when an agent contributes to a shared reward. This problem is
+                      particularly hard for teams with many decentralized agents. In this talk, I will discuss common
+                      approaches for addressing this problem from the perspective of learning individual utility
+                      functions agents can use for decentralized decision making. I will then discuss our recent work in
+                      this growing body of literature and how we leverage successor features to achieve promising
+                      results.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>12:15-12:20p</td>
+                <td>Q/A and Discussion for Invited Session 2</td>
+              </tr>
+
+              <tr>
+                <td style="color:navy">1:00p</td>
+                <td style="color:navy">Contributed Papers - Poster Session</td>
+              </tr>
+              <tr>
+                <td style="color:navy">2:00p</td>
+                <td style="color:navy">Invited Session 3</td>
+              </tr>
+              <tr>
+                <td>2:00-2:30p</td>
+                <td>
+                  <div class="collapsible">Chi Jin (Princeton) - V-Learning --- A Simple, Efficient, Decentralized
+                    Algorithm for Multiagent RL</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="+2">Abstract:</font>
+                      </b>
+                      A major challenge of multiagent reinforcement learning (MARL) is the curse of multiagents, where
+                      the size of the joint action space scales exponentially with the number of agents. This remains to
+                      be a bottleneck for designing efficient MARL algorithms even in a basic scenario with finitely
+                      many states and actions. This paper resolves this challenge for the model of episodic Markov
+                      games. We design a new class of fully decentralized algorithms---V-learning, which provably learns
+                      Nash equilibria (in the two-player zero-sum setting), correlated equilibria and coarse correlated
+                      equilibria (in the multiplayer general-sum setting) in a number of samples that only scales with
+                      \max_i A_i, where A_i is the number of actions for the ith player. This is in sharp contrast to
+                      the size of the joint action space which is \prod_i A_i. V-learning (in its basic form) is a new
+                      class of single-agent RL algorithms that convert any adversarial bandit algorithm with suitable
+                      regret guarantees into a RL algorithm. Similar to the classical Q-learning algorithm, it performs
+                      incremental updates to the value functions. Different from Q-learning, it only maintains the
+                      estimates of V-values instead of Q-values. This key difference allows V-learning to achieve the
+                      claimed guarantees in the MARL setting by simply letting all agents run V-learning independently.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2:30-3:00p</td>
+                <td>
+                  <div class="collapsible">Bo An (NTU) - Deep Learning for Solving Large Scale Complex Games</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="+2">Abstract:</font>
+                      </b>
+                      Some important breakthroughs in artificial intelligence in recent years (such as Libratus and
+                      security games) can be attributed to the development of large-scale game solving technology in the
+                      past decade. However, game solving technology cannot handle large scale complex games, and the
+                      academic community began to use deep learning techniques to solve such complex games. The talk
+                      will discuss important progress in this direction in recent years and future directions.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3:00-3:10p</td>
+                <td>Q/A and Discussion for Invited Session 3</td>
+              </tr>
+
+              <tr>
+                <td style="color:navy">3:15p</td>
+                <td style="color:navy">Invited Session 4</td>
+              </tr>
+              <tr>
+                <td>3:15-3:45p</td>
+                <td>
+                  <div class="collapsible">Jakob Foerster (Oxford) - Opponent-Shaping and Interference in General-Sum
+                    Games</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="+2">Abstract:</font>
+                      </b>
+                      In general-sum games, the interaction of self-interested learning agents commonly leads to
+                      collectively worst-case outcomes, such as defect-defect in the iterated prisoner's dilemma (IPD).
+                      To overcome this, some methods, such as Learning with Opponent-Learning Awareness (LOLA), shape
+                      their opponents' learning process. However, these methods are myopic since only a small number of
+                      steps can be anticipated, are asymmetric since they treat other agents as naive learners, and
+                      require the use of higher-order derivatives, which are calculated through white-box access to an
+                      opponent's differentiable learning algorithm.
+                      In this talk I will first introduce Model-Free Opponent Shaping (M-FOS), which overcomes all of
+                      these limitations. M-FOS learns in a meta-game in which each meta-step is an episode of the
+                      underlying (``inner'') game. The meta-state consists of the inner policies, and the meta-policy
+                      produces a new inner policy to be used in the next episode. M-FOS then uses generic model-free
+                      optimisation methods to learn meta-policies that accomplish long-horizon opponent shaping.
+                      I will finish off the talk with our recent results for adversarial (or cooperative) cheap-talk:
+                      How can agents interfere with (or support) the learning process of other agents without being able
+                      to act in the environment?
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3:45-4:15p</td>
+                <td>
+                  <div class="collapsible">Amanda Prorok (Cambridge) - Machine Learning for Multi-Agent and Multi-Robot
+                    Problems</div>
+                  <div class="hidden-content">
+                    <p style="margin-top:8pt; margin-bottom:7pt; text-align:justify">
+                      <b>
+                        <font size="+2">Abstract:</font>
+                      </b>
+                      In this talk, I first discuss how we leverage machine learning methods to generate cooperative
+                      policies for multi-robot systems. I describe how we use Graph Neural Networks (GNNs) to learn
+                      effective communication strategies for decentralized coordination. I then show how our GNN-based
+                      policy is able to achieve near-optimal performance across a variety of problems, at a fraction of
+                      the real-time computational cost. Finally, I present some pioneering real-robot experiments that
+                      demonstrate the transfer of our methods to the physical world.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>4:15-4:25p</td>
+                <td>Q/A and Discussion for Invited Session 4</td>
+              </tr>
+              <tr>
+                <td style="color:navy">4:25-4:50p</td>
+                <td style="color:navy">Concluding Remarks</td>
+              </tr>
+            </tbody>
+          </table>
+        </font>
+
+      </div>
+
+    </div>
+  </div>
+-->
+
+
+<!--
+  <div class="site-section" id="section-papers">
+    <div class="container">
+      <div class="row mb-0">
+        <div class="text-justify pb-1 border-primary mb-4">
+          <h2 class="text-primary">Contributed Papers</h2>
+        </div>
+      </div>
+      <h5 style="color:navy"> Oral Presentation</h5>
+      <font size="4" face="Helvetica">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td>[#1]</td>
+              <td>Oliver Järnefelt and Carlo D'Eramo, <em style="color:maroon">Modular Value Function Factorization in
+                  Multi-Agent Reinforcement Learning</em><br> <a href="contributed_papers/IROS22-DMMAS_paper_5267.pdf"
+                  target="_blank"> [Link to Paper]</a><a href="posters/DMMAS_5267.pdf" target="_blank"> [Link to
+                  Poster]</a></td>
+            </tr>
+            <tr>
+              <td>[#2]</td>
+              <td>Charles Jin, Zhang-Wei Hong and Martin Rinard, <em style="color:maroon">Toward Capability-Aware
+                  Cooperation for Decentralized Planning</em> <br><a
+                  href="contributed_papers/IROS22-DMMAS_paper_7852.pdf" target="_blank"> [Link to Paper]</a>
+ 
+              </td>
+            </tr>
+            <tr>
+              <td>[#3]</td>
+              <td>Yuchen Xiao, Weihao Tan and Christopher Amato, <em style="color:maroon">Asynchronous Actor-Critic for
+                  Multi-Agent Reinforcement Learning</em> <br><a href="contributed_papers/IROS22-DMMAS_paper_5233.pdf"
+                  target="_blank"> [Link to Paper]</a>
+
+              </td>
+            </tr>
+            <tr>
+              <td>[#4]</td>
+              <td>Qin Yang and Ramviyas Parasuraman, <em style="color:maroon">A Game-theoretic Utility Network for
+                  Cooperative Multi-Agent Decisions in Adversarial Environments</em> <a
+                  href="contributed_papers/IROS22-DMMAS_paper_6456.pdf" target="_blank"> [Link
+                  to Paper]</a><a href="posters/DMMAS_6456.pdf" target="_blank"> [Link to Poster]</a></td>
+            </tr>
+            <tr>
+              <td>[#5]</td>
+              <td>Vincenzo Polizzi, Robert Hewitt, Javier Hidalgo-Carrió, Jeff Delaune and Davide Scaramuzza, <em
+                  style="color:maroon">Data-Efficient Collaborative Decentralized Thermal-Inertial Odometry</em> <a
+                  href="contributed_papers/IROS22-DMMAS_paper_9593.pdf" target="_blank">
+                  [Link to Paper]</a><a href="posters/DMMAS_9593.pdf" target="_blank"> [Link to Poster]</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </font>
+      <br>
+      <h5 style="color:navy"> Posters</h5>
+      <font size="4" face="Helvetica">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td>[#6]</td>
+              <td>Niels van Duijkeren, Luigi Palmieri, Ralph Lange and Alexander Kleiner, <em style="color:maroon">An
+                  Industrial Perspective on Multi-Agent Decision Making for Interoperable Robot Navigation following the
+                  VDA5050 Standard</em> <a href="contributed_papers/IROS22-DMMAS_paper_3613.pdf" target="_blank"> [Link
+                  to Paper]</a><a href="posters/DMMAS_3613.pdf" target="_blank"> [Link to Poster]</a>
+              </td>
+            </tr>
+            <tr>
+              <td>[#7]</td>
+              <td>Simon Schaefer, Luigi Palmieri, Lukas Heuer, Niels van Duijkeren, Ruediger Dillmann, Sven Koenig and
+                Alexander Kleiner, <em style="color:maroon">Towards Reliable Benchmarking for Multi-Robot Planning in
+                  Realistic, Cluttered and Complex Environments</em> <a
+                  href="contributed_papers/IROS22-DMMAS_paper_6093.pdf" target="_blank"> [Link to Paper]</a><a
+                  href="posters/DMMAS_6093.pdf" target="_blank"> [Link to Poster]</a></td>
+            </tr>
+            <tr>
+              <td>[#8]</td>
+              <td>Dipanwita Guhathakurta, Fatemeh Rastgar, M Aditya Sharma, Madhava Krishna and Arun Kumar Singh, <em
+                  style="color:maroon">GPU Acceleration of Joint Multi-Agent Trajectory Optimization</em> <a
+                  href="contributed_papers/IROS22-DMMAS_paper_5205.pdf" target="_blank"> [Link to Paper]</a><a
+                  href="posters/DMMAS_5205.pdf" target="_blank"> [Link to Poster]</a></td>
+              </td>
+            </tr>
+            <tr>
+              <td> [#9]</td>
+              <td>Bilal Maassarani, Kevin Garanger and Eric Feron, <em style="color:maroon">The TetraheDrone: A
+                  Structured Fractal HFW-VTOL UAS</em> <a href="contributed_papers/IROS22-DMMAS_paper_9553.pdf"
+                  target="_blank"> [Link to Paper]</a>
+ 
+              </td>
+            </tr>
+            <tr>
+              <td>[#10]</td>
+              <td> Khaled Wahba and Wolfgang Hönig, <em style="color:maroon">Distributed Geometric and
+                  Optimization-based Control of Multiple Quadrotors for Cable-Suspended Payload Transport</em> <a
+                  href="contributed_papers/IROS22-DMMAS_paper_1100.pdf" target="_blank"> [Link to Paper]</a><a
+                  href="posters/DMMAS_1100.pdf" target="_blank"> [Link to Poster]</a></td>
+            </tr>
+            <tr>
+              <td>[#11]</td>
+              <td>Ziyi Zhou and Ye Zhao, <em style="color:maroon">Leveraging Quadrupedal Robots in Heterogeneous
+                  Multi-Robot Teaming with Run-Time Disturbances</em> <a
+                  href="contributed_papers/IROS22-DMMAS_paper_3606.pdf" target="_blank"> [Link to Paper]</a>
+                <a href="posters/DMMAS_3606.pdf" target="_blank"> [Link to Poster]</a>
+              </td>
+            </tr>
+            <tr>
+              <td>[#12]</td>
+              <td>Brian Reily, Bradley Woosley, John Rogers and Christopher Reardon, <em
+                  style="color:maroon">Multi-Agent Perimeter Monitoring for Uncertainty Reduction</em> <a
+                  href="contributed_papers/IROS22-DMMAS_paper_4451.pdf" target="_blank"> [Link to
+                  Paper]</a>
+                <a href="posters/DMMAS_4451.pdf" target="_blank"> [Link to Poster]</a>
+              </td>
+            </tr>
+            <tr>
+              <td>[#13]</td>
+              <td>Harel Biggie and Christoffer Heckman, <em style="color:maroon">Towards Reducing Human Supervision in
+                  Fielded Multi-Agent Systems</em> <br> <a href="contributed_papers/IROS22-DMMAS_paper_1627.pdf"
+                  target="_blank"> [Link
+                  to Paper]</a><a href="posters/DMMAS_1627.pdf" target="_blank"> [Link to Poster]</a></td>
+            </tr>
+            <tr>
+              <td>[#14]</td>
+              <td>Seth Karten and Katia Sycara, <em style="color:maroon">Intent-Grounded Compositional Communication
+                  through Mutual Information in Multi-Agent Teams</em> <a
+                  href="contributed_papers/IROS22-DMMAS_paper_5730.pdf" target="_blank"> [Link
+                  to Paper]</a><a href="posters/DMMAS_5730.pdf" target="_blank"> [Link to Poster]</a></td>
+            </tr>
+            <tr>
+              <td>[#15]</td>
+              <td>Mingi Jeong, Julien Blanchet, Joseph Gatto and Alberto Quattrini Li, <em style="color:maroon">A
+                  Hierarchical Multi-ASV Control System Framework for Adversarial ASV Detainment</em> <a
+                  href="contributed_papers/IROS22-DMMAS_paper_6832.pdf" target="_blank"> [Link
+                  to Paper]</a><a href="posters/DMMAS_6832.pdf" target="_blank"> [Link to Poster]</a></td>
+            </tr>
+            <tr>
+              <td>[#16]</td>
+              <td>Andreas Kokkas, Micael Couceiro, Ivan Doria, Andre Araújo and Jose Rosa, <em
+                  style="color:maroon">Towards the Next Generation of Multi-Robot Systems for Solar Power Plants
+                  Inspection and Maintenance</em> <a href="contributed_papers/IROS22-DMMAS_paper_9239.pdf"
+                  target="_blank"> [Link
+                  to Paper]</a><a href="posters/DMMAS_9239.pdf" target="_blank"> [Link to Poster]</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </font>
+
+    </div>
+  </div>
+-->
+
+
+
+ <div class="site-section" id="section-SubmissionProcedure">
+    <div class="container">
+
+      <div class="row mb-0 mt-5">
+
+        <div class="text-justify pb-1 border-primary mb-4">
+          <h2 class="text-primary">Submission Procedure</h2>
+        </div>
+        <p>
+          <font size="+1">The paper submission and review will be conducted in EasyChair and the submission instruction will follow the guideline for the AAMAS main conference. Submissions should be uploaded in PDF form at<a
+		  href="https://easychair.org/conferences/?conf=msdm23" target="_blank">https://easychair.org/conferences/?conf=msdm23</a>.
+
+          </font>
+        </p>
+        <p>
+          <font size="+1">The paper selection will not use the blind review process. All the submissions will be reviewed by at least two independent reviewers and the acceptance standard will follow the acceptance criteria of the AAMAS main conference.
+          </font>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+	
+  <div class="site-section border-bottom" id="section-OrganizingCommittee">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center border-primary">
+          <h2 class="font-weight-light text-primary" data-aos="fade">Organizing Committee</h2>
+        </div>
+      </div>
+		
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="person">
+   <!--         <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">            -->
+            <h3><a
+              href="https://www.northumbria.ac.uk/about-us/our-staff/z/yifeng-zeng/"
+              target="_blank">Yifeng Zeng</a></h3>
+            <p class="position">Professor</p>
+            <p class="mb-4"> Northumbria University <br> UK </p>
+			<p>
+			   <a
+				  href="mailto: yifeng.zeng@northumbria.uk">yifeng.zeng@northumbria.uk</a> 
+			</p>
+            <ul class="ul-social-circle">
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+          <div class="person">
+   <!--         <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">          -->
+            <h3><a
+              href="https://www.cs.uga.edu/directory/people/prashant-doshi"
+              target="_blank">Prashant Doshi</a></h3>
+            <p class="position">Professor</p>
+            <p class="mb-4">University of Georgia <br> USA </p>
+			  			<p>
+			   <a
+				  href="mailto: pdoshi@uga.edu">pdoshi@uga.edu</a> 
+			</p>
+            <ul class="ul-social-circle">
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+          <div class="person">
+   <!--         <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">          -->
+			<h3><a
+              href="https://csse.szu.edu.cn/staff/panyh/"
+              target="_blank">Yinghui Pan</a></h3>
+            <p class="position">Research Professor</p>
+            <p class="mb-4">Shenzhen University <br> China </p>
+			  			  			<p>
+			   <a
+				  href="mailto: panyinghui@szu.edu.cn">panyinghui@szu.edu.cn</a> 
+			</p>
+            <ul class="ul-social-circle">
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="person">
+   <!--         <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">              -->
+            <h3><a
+              href="https://ycx424.wixsite.com/xiaoyc"
+              target="_blank">Yuchen Xiao</a></h3>
+            <p class="position">Research Scientist</p>
+            <p class="mb-4">J.P. Morgan <br> USA </p>
+			  			  			  			<p>
+			   <a
+				  href="mailto: xiao.yuch@northeastern.edu">xiao.yuch@northeastern.edu</a> 
+			</p>
+            <ul class="ul-social-circle">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+<!-- 
+      <br>
+      <div class="text-justify pb-1 border-primary mb-4">
+        <h2 class="text-primary">Program Committee</h2>
+      </div>
+      <div class="row mb-5">
+        <br>
+        <ul>
+          <li>Dipankar Maity, University of North Carolina</li>
+          <li>Daigo Shishika, George Mason University</li>
+          <li>Mi Zhou, Georgia Institute of Technology</li>
+          <li>Qifan Zhang, Google</li> 
+        </ul>
+
+      </div>
+	-->
+
+      <div class="text-justify pb-1 border-primary mb-4">
+        <h2 class="text-primary">Contact</h2>
+      </div>
+      <div class="row mb-5">
+        <p>
+          <font size="+1"> &nbsp&nbsp&nbspIf you have any question regarding the workshop, please contact the <a
+              href="mailto: yifeng.zeng@northumbria.uk">main contact of this workshop</a>. </font>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+<!--
+  <div class="site-section bg-light" id="section-sponsors">
+    <div class="container">
+      <div class="row justify-content-center mb-5" data-aos="fade-up">
+        <div class="col-md-10 text-center border-primary">
+          <h2 class="mb-0 text-primary">Sponsors</h2>
+          <h4 class="color-black-opacity-5">This workshop is supported by the <strong>IEEE RAS TC on Multi-Robot
+              Systems</strong> and the <strong>IEEE RAS TC on Algorithms for Planning and Control of Robot
+              Motion.</strong></h4>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+-->
+
+
+
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+
+    Array.from(coll).forEach((col, i) => {
+      col.addEventListener("click", function () {
+        this.classList.toggle("active");
+        showHideRow(`hidden-content`, i);
+      });
+    });
+
+    function showHideRow(className, index) {
+      var content = document.getElementsByClassName(className)[index];
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
